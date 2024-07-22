@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tic-tac-toe</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="In HTML, CSS, and JavaScript.">
+  <meta name="keywords" content="tic-tac-toe">
+  <meta name="author" content="Cristiano Alexandre de Almeida Sequeira">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+
+  <div id="wrapper">
+
+    <h1>Tic-tac-toe</h1>
+
+    <p id="scoreboard">Turn: X</p>
+
+    <!-- Square, top left. -->
+    <div class="tic-tac-toe border-right border-bottom" onclick="roundTurn('stl')">
+      <p id="stl">&nbsp;</p>
+    </div>
+
+    <!-- Square, top center. -->
+    <div class="tic-tac-toe border-right border-bottom border-left" onclick="roundTurn('stc')">
+      <p id="stc">&nbsp;</p>
+    </div>
+
+    <!-- Square, top right. -->
+    <div class="tic-tac-toe border-bottom border-left" onclick="roundTurn('str')">
+      <p id="str">&nbsp;</p>
+    </div>
+
+    <!-- Square, center left. -->
+    <div class="tic-tac-toe border-top border-right border-bottom" onclick="roundTurn('scl')">
+      <p id="scl">&nbsp;</p>
+    </div>
+
+    <!-- Square, middle. -->
+    <div class="tic-tac-toe border-top border-right border-bottom border-left" onclick="roundTurn('sm')">
+      <p id="sm">&nbsp;</p>
+    </div>
+
+    <!-- Square, center right. -->
+    <div class="tic-tac-toe border-top border-bottom border-left" onclick="roundTurn('scr')">
+      <p id="scr">&nbsp;</p>
+    </div>
+
+    <!-- Square, bottom left. -->
+    <div class="tic-tac-toe border-top border-right" onclick="roundTurn('sbl')">
+      <p id="sbl">&nbsp;</p>
+    </div>
+
+    <!-- Square, bottom center. -->
+    <div class="tic-tac-toe border-top border-right border-left" onclick="roundTurn('sbc')">
+      <p id="sbc">&nbsp;</p>
+    </div>
+
+    <!-- Square, bottom right. -->
+    <div class="tic-tac-toe border-top border-left" onclick="roundTurn('sbr')">
+      <p id="sbr">&nbsp;</p>
+    </div>
+
+    <div id="button" onclick="newRound()">
+      <p id="play-again">Play again!</p>
+    </div>
+
+    <p id="fork"><a href="https://github.com/crissequeira89/tic-tac-toe">Fork me on GitHub!</a></p>
+
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
